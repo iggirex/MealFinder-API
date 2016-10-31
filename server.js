@@ -1,6 +1,6 @@
 var express = require("express");
 var path = require("path");
-var body-parser = require("body-parser");
+var bodyParser = require("body-parser");
 var mongodb = require("mongodb");
 var ObjectID = mongodb.ObjectID;
 
