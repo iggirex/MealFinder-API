@@ -41,7 +41,7 @@ app.post("/dishes", function(req, res) {
   var newDish = req.body;
   newDish.createDate = new Date();
 
-  if (!(req.body.firstName || req.body.lastName)) {
+  if (!(req.body.name || req.body.photoUrl)) {
     handleError(res, "Invalid user inpput", "Must provide a first or last name.", 400);
   }
 
