@@ -34,7 +34,13 @@ function handleError(res, reason, message, code) {
 }
 
 app.get("/dishes", function(req, res) {
-
+  db.collection(DISHES_COLLECTION).find({}).toArray(err, docs) {
+    if (err) {
+      handleError(res, err.message, "Failed to get contacts.");
+    } else {
+      res.status(200).json(docs);
+    }
+  }
 });
 
 app.post("/dishes", function(req, res) {
