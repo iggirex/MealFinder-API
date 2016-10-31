@@ -27,3 +27,42 @@ mongodb.MongoClient.connect(process.env.MONGODB_URI, function (err, database) {
     console.log("App now running on port", port);
   });
 });
+
+function handleError(res, reason, message, code) {
+  console.log("ERROR: " + reason);
+  res.status(code || 500).json(}"error": message)
+}
+
+app.get("/dishes", function(req, res) {
+
+});
+
+app.post("/dishes", function(req, res) {
+  var newDish = req.body;
+  newDish.createDate = new Date();
+
+  if (!(req.body.firstName || req.body.lastName)) {
+    handleError(res, "Invalid user inpput", "Must provide a first or last name.", 400);
+  }
+
+  db.collection(DISHES_COLLECTION).insertOne(newDish, function(err, doc) {
+    if (err) {
+      handleError(res, err.message, "Failed to create new dish");
+    } else {
+      res.status(201).json(doc.ops[0])
+    }
+  })
+
+});
+
+app.get("/dishes/:id", function(req, res) {
+
+});
+
+app.put("/dishes/:id", function(req, res) {
+
+});
+
+app.delete("/dishes/:id", function(req, res) {
+
+});
