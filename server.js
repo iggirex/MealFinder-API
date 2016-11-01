@@ -55,9 +55,9 @@ app.get("/postDishes/:restrictions", function(req, res, next) {
             {$elemMatch: "paleo"}
           ]
         }
-        .toArray(function(err, docs) {
-    res.status(200).json(docs);
-    })
+    //     .toArray(function(err, docs) {
+    // res.status(200).json(docs);
+    // })
   })
 })
 //---------------------------------
