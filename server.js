@@ -46,8 +46,9 @@ app.get("/dishes", function(req, res) {
 //-------------CONSTRUSCTION-------
 app.get("/postDishes/:restrictions", function(req, res, next) {
   // res.send(req.params.restrictions)
-  var filteredResult = db.collection(DISHES_COLLECTION).find({ tags: "paleo"});
-  res.send(filteredResult);
+  var filteredResult = db.collection(DISHES_COLLECTION).find({ tags: "paleo"}).toArray(function(err, docs) {
+    res.status(200).json(docs);
+  })
 })
 //---------------------------------
 
