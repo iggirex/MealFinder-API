@@ -44,7 +44,7 @@ app.get("/dishes", function(req, res) {
 });
 
 //-------------CONSTRUSCTION-------
-app.get("/postDishes/:restrictions", function(req, res, next) {
+app.post("/postDishes/:restrictions", function(req, res, next) {
   // res.send(req.params.restrictions)
   var filteredResult = db.collection(DISHES_COLLECTION)
     .find({ tags: {$all: ["paleo", "vegan"]} }).toArray(function(err, docs) {
