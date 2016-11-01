@@ -46,7 +46,16 @@ app.get("/dishes", function(req, res) {
 //-------------CONSTRUSCTION-------
 app.get("/postDishes/:restrictions", function(req, res, next) {
   // res.send(req.params.restrictions)
-  var filteredResult = db.collection(DISHES_COLLECTION).find({ tags: "paleo" && "vegan"}).toArray(function(err, docs) {
+  var filteredResult = db.collection(DISHES_COLLECTION)
+    .find(
+      {
+        tags: {
+          $all: [
+            {$elemMatch: "vegan"},
+            {$elemMatch: "paleo"}
+          ]
+        }
+        .toArray(function(err, docs) {
     res.status(200).json(docs);
   })
 })
