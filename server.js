@@ -49,6 +49,7 @@ app.post("/postDishes", function(req, res, next) {
   var filteredResult = db
   .collection(DISHES_COLLECTION)
     .find({ tags: {$all: ["paleo", "vegan"]} }).toArray(function(err, docs) {
+      console.log("---->YYOO this is req.body: ", req.body)
     res.status(200).json(docs);
   })
 })
