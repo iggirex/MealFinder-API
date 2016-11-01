@@ -43,9 +43,17 @@ app.get("/dishes", function(req, res) {
   });
 });
 
-app.post("/dishes", function(req, res) {
-  var newDish = req.body;
-  newDish.createDate = new Date();
+//-------------CONSTRUSCTION-------
+app.get("/postDishes/:restrictions", function(req, res, next) {
+  res.send(req.params.restrictions)
+  var filteredResult = db.dishes.find({ tags: "paleo"});
+  res.send(filteredResult);
+})
+//---------------------------------
+
+app.post("/dishes/:restrictions", function(req, res) {
+  var filterByRestrictions = req.body.restrictions;
+  // newDish.createDate = new Date();
 
   if (!(req.body.name || req.body.photoUrl)) {
     handleError(res, "Invalid user inpput", "Must provide a first or last name.", 400);
@@ -60,15 +68,15 @@ app.post("/dishes", function(req, res) {
   })
 
 });
-
-app.get("/dishes/:id", function(req, res) {
-
-});
-
-app.put("/dishes/:id", function(req, res) {
-
-});
-
-app.delete("/dishes/:id", function(req, res) {
-
-});
+//
+// app.get("/dishes/:id", function(req, res) {
+//
+// });
+//
+// app.put("/dishes/:id", function(req, res) {
+//
+// });
+//
+// app.delete("/dishes/:id", function(req, res) {
+//
+// });
