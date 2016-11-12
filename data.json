@@ -1,25 +1,7 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Gist
- @iggirex
- Watch 1
-  Unstar 1
- Fork 1 tylerchase/food_data
- Code  Issues 0  Pull requests 0  Projects 0  Wiki  Pulse  Graphs
-Branch: master Find file Copy pathfood_data/data.json
-ab41015  7 minutes ago
-@tylerchase tylerchase imgur
-1 contributor
-RawBlameHistory
-1237 lines (1236 sloc)  81.5 KB
-let foods = {
-      "menu_items": [
+[
         {
-          "name": "Steamed Clams",
-          "photoUrl": "http://i.imgur.com/9vMNTzy.jpg",
+          "name": "steamed clams",
+          "photoUrl": "https://i.imgur.com/9vMNTzy.jpg",
           "vegan": false,
           "vegetarian": false,
           "paleo": true,
@@ -30,12 +12,13 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["clams"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesDairy", "excludesNuts", "excludesEgg", "paleo", "glutenFree", "containsShellfish"]
+          "tags":["all", "excludesDairy", "excludesNuts", "excludesEgg", "paleo", "glutenFree", "containsShellfish"]
         },
         {
-          "name": "Oysters on the half shell",
-          "photoUrl": "http://i.imgur.com/oedmmnc.jpg",
+          "name": "oysters on the half shell",
+          "photoUrl": "https://i.imgur.com/oedmmnc.jpg",
           "vegan": false,
           "vegetarian": false,
           "paleo": true,
@@ -46,12 +29,13 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["oysters"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesDairy", "excludesNuts", "excludesEgg", "paleo", "glutenFree", "containsShellfish"]
+          "tags":["all", "excludesDairy", "excludesNuts", "excludesEgg", "glutenFree", "containsShellfish"]
         },
         {
           "name": "rotisserie chicken",
-          "photoUrl": "http://i.imgur.com/kqSwKHF.jpg",
+          "photoUrl": "https://i.imgur.com/kqSwKHF.jpg",
           "vegan": false,
           "vegetarian": false,
           "paleo": true,
@@ -62,12 +46,13 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["rotisserie chicken"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "paleo", "glutenFree"]
+          "tags":["all", "excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "glutenFree"]
         },
         {
           "name": "chicken with cilantro",
-          "photoUrl": "http://i.imgur.com/oU9pTmi.jpg",
+          "photoUrl": "https://i.imgur.com/oU9pTmi.jpg",
           "vegan": false,
           "vegetarian": false,
           "paleo": true,
@@ -78,12 +63,13 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["chicken"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "paleo", "glutenFree"]
+          "tags":["all", "excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "glutenFree"]
         },
         {
           "name": "steak",
-          "photoUrl": "http://i.imgur.com/MFCdLy1.jpg",
+          "photoUrl": "https://i.imgur.com/MFCdLy1.jpg",
           "vegan": false,
           "vegetarian": false,
           "paleo": true,
@@ -94,12 +80,13 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["steak"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "paleo", "glutenFree"]
+          "tags":["all", "excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "paleo", "glutenFree"]
         },
         {
           "name": "beef tenderloin",
-          "photoUrl": "http://i.imgur.com/bPsQ5Hh.jpg",
+          "photoUrl": "https://i.imgur.com/bPsQ5Hh.jpg",
           "vegan": false,
           "vegetarian": false,
           "paleo": true,
@@ -110,12 +97,13 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["beef", "tenderloin"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "paleo", "glutenFree"]
+          "tags":["all", "excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "paleo", "glutenFree"]
         },
         {
           "name": "sirloin steak",
-          "photoUrl": "http://i.imgur.com/byjhnqL.jpg",
+          "photoUrl": "https://i.imgur.com/byjhnqL.jpg",
           "vegan": false,
           "vegetarian": false,
           "paleo": true,
@@ -126,12 +114,13 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["beef", "sirloin"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "httpss://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "paleo", "glutenFree"]
+          "tags":["all", "excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "paleo", "glutenFree"]
         },
         {
           "name": "bbq platter",
-          "photoUrl": "http://i.imgur.com/FyOi6Vn.jpg",
+          "photoUrl": "https://i.imgur.com/FyOi6Vn.jpg",
           "vegan": false,
           "vegetarian": false,
           "paleo": true,
@@ -142,12 +131,13 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["beef", "pork", "french fries"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "httpss://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "paleo", "glutenFree"]
+          "tags":["all", "excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "glutenFree"]
         },
         {
           "name": "lobster",
-          "photoUrl": "http://i.imgur.com/00CeadK.jpg",
+          "photoUrl": "https://i.imgur.com/00CeadK.jpg",
           "vegan": false,
           "vegetarian": false,
           "paleo": true,
@@ -158,12 +148,13 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["lobster"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "httpss://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesDairy", "excludesNuts", "excludesEgg", "paleo", "glutenFree", "containsShellfish"]
+          "tags":["all", "excludesDairy", "excludesNuts", "excludesEgg", "glutenFree", "containsShellfish"]
         },
         {
           "name": "crab",
-          "photoUrl": "http://i.imgur.com/pAwh8v7.jpg",
+          "photoUrl": "https://i.imgur.com/pAwh8v7.jpg",
           "vegan": false,
           "vegetarian": false,
           "paleo": true,
@@ -174,12 +165,13 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["crab"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "httpss://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesDairy", "excludesNuts", "excludesEgg", "paleo", "glutenFree", "containsShellfish"]
+          "tags":["all", "excludesDairy", "excludesNuts", "excludesEgg", "glutenFree", "containsShellfish"]
         },
         {
           "name": "salmon",
-          "photoUrl": "http://i.imgur.com/BWEDdfo.jpg",
+          "photoUrl": "https://i.imgur.com/BWEDdfo.jpg",
           "vegan": false,
           "vegetarian": false,
           "paleo": true,
@@ -190,12 +182,13 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["salmon", "seafood"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "httpss://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "paleo", "glutenFree"]
+          "tags":["all", "excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "paleo", "glutenFree"]
         },
         {
           "name": "pancakes",
-          "photoUrl": "http://i.imgur.com/v041QTx.jpg",
+          "photoUrl": "https://i.imgur.com/v041QTx.jpg",
           "vegan": false,
           "vegetarian": false,
           "paleo": false,
@@ -206,12 +199,13 @@ let foods = {
           "containsEgg": true,
           "searchFor": ["pancakes"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "httpss://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesNuts", "excludesShellfish", "containsDairy", "containsEgg"]
+          "tags":["all", "excludesNuts", "excludesShellfish", "containsDairy", "containsEgg"]
         },
         {
           "name": "waffles",
-          "photoUrl": "http://i.imgur.com/672Efek.jpg",
+          "photoUrl": "https://i.imgur.com/672Efek.jpg",
           "vegan": false,
           "vegetarian": false,
           "paleo": false,
@@ -222,12 +216,13 @@ let foods = {
           "containsEgg": true,
           "searchFor": ["waffles"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "httpss://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesNuts", "excludesShellfish", "containsDairy","containsEgg"]
+          "tags":["all", "excludesNuts", "excludesShellfish", "containsDairy","containsEgg"]
         },
         {
           "name": "cinnamon rolls",
-          "photoUrl": "http://i.imgur.com/O4y439w.jpg",
+          "photoUrl": "https://i.imgur.com/O4y439w.jpg",
           "vegan": false,
           "vegetarian": false,
           "paleo": false,
@@ -238,12 +233,13 @@ let foods = {
           "containsEgg": true,
           "searchFor": ["cinnamon rolls"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "httpss://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesNuts", "excludesShellfish", "containsDairy", "containsEgg"]
+          "tags":["all", "excludesNuts", "excludesShellfish", "containsDairy", "containsEgg"]
         },
         {
           "name": "eggs",
-          "photoUrl": "http://i.imgur.com/4klXLlq.jpg",
+          "photoUrl": "https://i.imgur.com/4klXLlq.jpg",
           "vegan": false,
           "vegetarian": true,
           "paleo": true,
@@ -254,12 +250,13 @@ let foods = {
           "containsEgg": true,
           "searchFor": ["eggs"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "httpss://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesDairy", "excludesNuts", "excludesShellfish", "vegetarian", "paleo", "glutenFree", "containsEgg"]
+          "tags":["all", "excludesDairy", "excludesNuts", "excludesShellfish", "vegetarian", "paleo", "glutenFree", "containsEgg"]
         },
         {
-          "name": "Donuts",
-          "photoUrl": "http://i.imgur.com/aWGJI11.jpg",
+          "name": "donuts",
+          "photoUrl": "https://i.imgur.com/aWGJI11.jpg",
           "vegan": false,
           "vegetarian": true,
           "paleo": false,
@@ -270,12 +267,13 @@ let foods = {
           "containsEgg": true,
           "searchFor": ["donuts"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "httpss://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesNuts", "excludesShellfish", "vegetarian", "containsDairy", "containsEgg"]
+          "tags":["all", "excludesNuts", "excludesShellfish", "vegetarian", "containsDairy", "containsEgg"]
         },
         {
           "name": "bagels and lox",
-          "photoUrl": "http://i.imgur.com/P2UQ3hQ.jpg",
+          "photoUrl": "https://i.imgur.com/P2UQ3hQ.jpg",
           "vegan": false,
           "vegetarian": false,
           "paleo": false,
@@ -286,12 +284,13 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["bagels", "loxs"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "httpss://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesNuts", "excludesShellfish", "excludesEgg", "containsDairy"]
+          "tags":["all", "excludesNuts", "excludesShellfish", "excludesEgg", "containsDairy"]
         },
         {
           "name": "bagels",
-          "photoUrl": "http://i.imgur.com/nsiqyMf.jpg",
+          "photoUrl": "https://i.imgur.com/nsiqyMf.jpg",
           "vegan": true,
           "vegetarian": true,
           "paleo": false,
@@ -302,12 +301,13 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["bagels"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "httpss://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegan", "vegetarian"]
+          "tags":["all", "excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegan", "vegetarian"]
         },
         {
           "name": "oatmeal",
-          "photoUrl": "http://i.imgur.com/eBkDl8S.jpg",
+          "photoUrl": "https://i.imgur.com/eBkDl8S.jpg",
           "vegan": true,
           "vegetarian": true,
           "paleo": false,
@@ -318,12 +318,13 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["oatmeal"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "httpss://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegan", "vegetarian", "glutenFree"]
+          "tags":["all", "excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegan", "vegetarian", "glutenFree"]
         },
         {
           "name": "english breakfast",
-          "photoUrl": "http://i.imgur.com/glp4C7B.jpg",
+          "photoUrl": "https://i.imgur.com/glp4C7B.jpg",
           "vegan": false,
           "vegetarian": false,
           "paleo": true,
@@ -334,12 +335,13 @@ let foods = {
           "containsEgg": true,
           "searchFor": ["eggs", "sausage"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "httpss://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesDairy", "excludesNuts", "excludesShellfish", "paleo", "containsEgg"]
+          "tags":["all", "excludesDairy", "excludesNuts", "excludesShellfish", "paleo", "containsEgg"]
         },
         {
           "name": "poached egggs with avocado on toast",
-          "photoUrl": "http://i.imgur.com/7CRxlkm.jpg",
+          "photoUrl": "https://i.imgur.com/7CRxlkm.jpg",
           "vegan": false,
           "vegetarian": false,
           "paleo": true,
@@ -350,12 +352,13 @@ let foods = {
           "containsEgg": true,
           "searchFor": ["eggs", "bacon", "avocado"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "httpss://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesDairy", "excludesNuts", "excludesShellfish", "paleo", "containsEgg"]
+          "tags":["all", "excludesDairy", "excludesNuts", "excludesShellfish", "paleo", "containsEgg"]
         },
         {
           "name": "cereal",
-          "photoUrl": "http://i.imgur.com/PvuXZkg.jpg",
+          "photoUrl": "https://i.imgur.com/PvuXZkg.jpg",
           "vegan": true,
           "vegetarian": true,
           "paleo": false,
@@ -366,12 +369,13 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["cereal", "milk"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegan", "vegetarian", "glutenFree"]
+          "tags":["all", "excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegan", "vegetarian", "glutenFree"]
         },
         {
-          "name": "Cookies",
-          "photoUrl": "http://i.imgur.com/V3FXWh9.jpg",
+          "name": "cookies",
+          "photoUrl": "https://i.imgur.com/V3FXWh9.jpg",
           "vegan": false,
           "vegetarian": true,
           "paleo": false,
@@ -382,12 +386,13 @@ let foods = {
           "containsEgg": true,
           "searchFor": ["cookies"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesNuts", "excludesShellfish", "vegetarian", "containsDairy", "containsEgg"]
+          "tags":["all", "excludesNuts", "excludesShellfish", "vegetarian", "containsDairy", "containsEgg"]
         },
         {
           "name": "ice cream",
-          "photoUrl": "http://i.imgur.com/o6NEyrK.jpg",
+          "photoUrl": "https://i.imgur.com/o6NEyrK.jpg",
           "vegan": false,
           "vegetarian": true,
           "paleo": false,
@@ -398,12 +403,13 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["ice cream"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesNuts", "excludesShellfish", "excludesEgg", "vegetarian", "glutenFree", "containsDairy"]
+          "tags":["all", "excludesNuts", "excludesShellfish", "excludesEgg", "vegetarian", "glutenFree", "containsDairy"]
         },
         {
           "name": "blueberry and blackberry pie",
-          "photoUrl": "http://i.imgur.com/19Stlv4.jpg",
+          "photoUrl": "https://i.imgur.com/19Stlv4.jpg",
           "vegan": false,
           "vegetarian": true,
           "paleo": false,
@@ -414,12 +420,13 @@ let foods = {
           "containsEgg": true,
           "searchFor": ["blueberry", "blackberry", "pie"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesNuts", "excludesShellfish", "vegetarian","containsDairy", "containsEgg"]
+          "tags":["all", "excludesNuts", "excludesShellfish", "vegetarian","containsDairy", "containsEgg"]
         },
         {
           "name": "macarons",
-          "photoUrl": "http://i.imgur.com/9X2IAi7.jpg",
+          "photoUrl": "https://i.imgur.com/9X2IAi7.jpg",
           "vegan": false,
           "vegetarian": true,
           "paleo": false,
@@ -430,12 +437,13 @@ let foods = {
           "containsEgg": true,
           "searchFor": ["desert", "macarons"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesNuts", "excludesShellfish", "vegetarian", "glutenFree", "containsDairy", "containsEgg"]
+          "tags":["all", "excludesNuts", "excludesShellfish", "vegetarian", "glutenFree", "containsDairy", "containsEgg"]
         },
         {
           "name": "brownie",
-          "photoUrl": "http://i.imgur.com/nRgWONu.jpg",
+          "photoUrl": "https://i.imgur.com/nRgWONu.jpg",
           "vegan": false,
           "vegetarian": true,
           "paleo": false,
@@ -446,12 +454,13 @@ let foods = {
           "containsEgg": true,
           "searchFor": ["desert", "brownie"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesShellfish", "vegetarian", "containsDairy", "containsNuts", "containsEgg"]
+          "tags":["all", "excludesShellfish", "vegetarian", "containsDairy", "containsNuts", "containsEgg"]
         },
         {
           "name": "creme brulee",
-          "photoUrl": "http://i.imgur.com/wIjS6Ql.jpg",
+          "photoUrl": "https://i.imgur.com/wIjS6Ql.jpg",
           "vegan": false,
           "vegetarian": true,
           "paleo": false,
@@ -462,12 +471,13 @@ let foods = {
           "containsEgg": true,
           "searchFor": ["dessert", "creme brulee"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesNuts", "excludesShellfish", "vegetarian", "containsDairy", "containsEgg"]
+          "tags":["all", "excludesNuts", "excludesShellfish", "vegetarian", "containsDairy", "containsEgg"]
         },
         {
           "name": "bacon cheeseburger",
-          "photoUrl": "http://i.imgur.com/cQkpe9T.jpg",
+          "photoUrl": "https://i.imgur.com/cQkpe9T.jpg",
           "vegan": false,
           "vegetarian": false,
           "paleo": false,
@@ -478,12 +488,13 @@ let foods = {
           "containsEgg": true,
           "searchFor": ["cheeseburger","bacon"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesNuts", "excludesShellfish", "containsDairy", "containsEgg"]
+          "tags":["all", "excludesNuts", "excludesShellfish", "containsDairy", "containsEgg"]
         },
         {
           "name": "sandwich",
-          "photoUrl": "http://i.imgur.com/NdV3e5a.jpg",
+          "photoUrl": "https://i.imgur.com/NdV3e5a.jpg",
           "vegan": false,
           "vegetarian": false,
           "paleo": false,
@@ -494,12 +505,13 @@ let foods = {
           "containsEgg": true,
           "searchFor": ["sandwich","bacon"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesNuts", "excludesShellfish", "containsDairy","containsEgg"]
+          "tags":["all", "excludesNuts", "excludesShellfish", "containsDairy","containsEgg"]
         },
         {
           "name": "panini",
-          "photoUrl": "http://i.imgur.com/8MbiOxJ.jpg",
+          "photoUrl": "https://i.imgur.com/8MbiOxJ.jpg",
           "vegan": false,
           "vegetarian": false,
           "paleo": false,
@@ -510,12 +522,13 @@ let foods = {
           "containsEgg": true,
           "searchFor": ["panini"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesNuts", "excludesShellfish", "containsDairy", "containsEgg"]
+          "tags":["all", "excludesNuts", "excludesShellfish", "containsDairy", "containsEgg"]
         },
         {
           "name": "cupcakes",
-          "photoUrl": "http://i.imgur.com/Kpa96b0.jpg",
+          "photoUrl": "https://i.imgur.com/Kpa96b0.jpg",
           "vegan": false,
           "vegetarian": true,
           "paleo": false,
@@ -526,12 +539,13 @@ let foods = {
           "containsEgg": true,
           "searchFor": ["cupcakes"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesNuts", "excludesShellfish", "vegetarian", "containsDairy", "containsEgg"]
+          "tags":["all", "excludesNuts", "excludesShellfish", "vegetarian", "containsDairy", "containsEgg"]
         },
         {
           "name": "cannoli donut",
-          "photoUrl": "http://i.imgur.com/H2RTJOw.jpg",
+          "photoUrl": "https://i.imgur.com/H2RTJOw.jpg",
           "vegan": false,
           "vegetarian": true,
           "paleo": false,
@@ -542,12 +556,13 @@ let foods = {
           "containsEgg": true,
           "searchFor": ["cannoli", "donut"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesNuts", "excludesShellfish", "vegetarian", "containsDairy", "containsEgg"]
+          "tags":["all", "excludesNuts", "excludesShellfish", "vegetarian", "containsDairy", "containsEgg"]
         },
         {
           "name": "fried cheese balls",
-          "photoUrl": "http://i.imgur.com/hxJktkB.jpg",
+          "photoUrl": "https://i.imgur.com/hxJktkB.jpg",
           "vegan": false,
           "vegetarian": true,
           "paleo": false,
@@ -558,12 +573,13 @@ let foods = {
           "containsEgg": true,
           "searchFor": ["fried", "cheese"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesNuts", "excludesShellfish", "vegetarian",  "containsDairy",  "containsEgg"]
+          "tags":["all", "excludesNuts", "excludesShellfish", "vegetarian",  "containsDairy",  "containsEgg"]
         },
         {
           "name": "chocolate cake",
-          "photoUrl": "http://i.imgur.com/57GA5SK.jpg",
+          "photoUrl": "https://i.imgur.com/57GA5SK.jpg",
           "vegan": false,
           "vegetarian": true,
           "paleo": false,
@@ -574,12 +590,13 @@ let foods = {
           "containsEgg": true,
           "searchFor": ["chocolate cake"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesNuts", "excludesShellfish", "vegetarian", "containsDairy", "containsEgg"]
+          "tags":["all", "excludesNuts", "excludesShellfish", "vegetarian", "containsDairy", "containsEgg"]
         },
         {
           "name": "pizza",
-          "photoUrl": "http://i.imgur.com/mzRUYZ3.jpg",
+          "photoUrl": "https://i.imgur.com/mzRUYZ3.jpg",
           "vegan": false,
           "vegetarian": false,
           "paleo": false,
@@ -590,12 +607,13 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["pizza"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesNuts", "excludesShellfish", "excludesEgg", "containsDairy"]
+          "tags":["all", "excludesNuts", "excludesShellfish", "excludesEgg", "containsDairy"]
         },
         {
           "name": "pesto pasta",
-          "photoUrl": "http://i.imgur.com/kanCI8F.jpg",
+          "photoUrl": "https://i.imgur.com/kanCI8F.jpg",
           "vegan": false,
           "vegetarian": true,
           "paleo": false,
@@ -606,12 +624,13 @@ let foods = {
           "containsEgg": true,
           "searchFor": ["pesto", "pasta", "vegan"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesShellfish", "vegetarian", "containsDairy", "containsNuts", "containsEgg"]
+          "tags":["all", "excludesShellfish", "vegetarian", "containsDairy", "containsNuts", "containsEgg"]
         },
         {
           "name": "homemade pasta",
-          "photoUrl": "http://i.imgur.com/Y0IFJG9.jpg",
+          "photoUrl": "https://i.imgur.com/Y0IFJG9.jpg",
           "vegan": false,
           "vegetarian": true,
           "paleo": false,
@@ -622,12 +641,13 @@ let foods = {
           "containsEgg": true,
           "searchFor": ["pasta", "vegan"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesNuts", "excludesShellfish", "vegetarian", "containsDairy", "containsEgg"]
+          "tags":["all", "excludesNuts", "excludesShellfish", "vegetarian", "containsDairy", "containsEgg"]
         },
         {
           "name": "pho",
-          "photoUrl": "http://i.imgur.com/LQreFzm.jpg",
+          "photoUrl": "https://i.imgur.com/LQreFzm.jpg",
           "vegan": false,
           "vegetarian": false,
           "paleo": false,
@@ -638,12 +658,13 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["pho"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg"]
+          "tags":["all", "excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg"]
         },
         {
           "name": "sushi",
-          "photoUrl": "http://i.imgur.com/nSq07eO.jpg",
+          "photoUrl": "https://i.imgur.com/nSq07eO.jpg",
           "vegan": false,
           "vegetarian": false,
           "paleo": false,
@@ -654,12 +675,13 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["sushi"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "glutenFree"]
+          "tags":["all", "excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "glutenFree"]
         },
         {
           "name": "udon noodle soup",
-          "photoUrl": "http://i.imgur.com/hKQhUkp.jpg",
+          "photoUrl": "https://i.imgur.com/hKQhUkp.jpg",
           "vegan": false,
           "vegetarian": true,
           "paleo": false,
@@ -670,12 +692,13 @@ let foods = {
           "containsEgg": true,
           "searchFor": ["udon", "soup"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesDairy", "excludesNuts", "excludesShellfish", "vegetarian", "containsEgg"]
+          "tags":["all", "excludesDairy", "excludesNuts", "excludesShellfish", "vegetarian", "containsEgg"]
         },
         {
           "name": "korean bbq",
-          "photoUrl": "http://i.imgur.com/RXNP3ru.jpg",
+          "photoUrl": "https://i.imgur.com/RXNP3ru.jpg",
           "vegan": false,
           "vegetarian": false,
           "paleo": true,
@@ -686,12 +709,13 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["bbq", "korean"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "paleo", "glutenFree"]
+          "tags":["all", "excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "paleo", "glutenFree"]
         },
         {
           "name": "korean hotpot",
-          "photoUrl": "http://i.imgur.com/yL8ysMc.jpg",
+          "photoUrl": "https://i.imgur.com/yL8ysMc.jpg",
           "vegan": false,
           "vegetarian": false,
           "paleo": true,
@@ -702,12 +726,13 @@ let foods = {
           "containsEgg": true,
           "searchFor": ["hotpot", "korean"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesDairy", "excludesNuts", "excludesShellfish", "paleo", "glutenFree", "containsEgg"]
+          "tags":["all", "excludesDairy", "excludesNuts", "excludesShellfish", "paleo", "glutenFree", "containsEgg"]
         },
         {
           "name": "coffee",
-          "photoUrl": "http://i.imgur.com/e88pCvI.jpg",
+          "photoUrl": "https://i.imgur.com/e88pCvI.jpg",
           "vegan": true,
           "vegetarian": true,
           "paleo": true,
@@ -718,12 +743,13 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["coffee"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegan", "vegetarian", "paleo", "glutenFree"]
+          "tags":["all", "excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegan", "vegetarian", "paleo", "glutenFree"]
         },
         {
           "name": "latte",
-          "photoUrl": "http://i.imgur.com/PzNDcEo.jpg",
+          "photoUrl": "https://i.imgur.com/PzNDcEo.jpg",
           "vegan": true,
           "vegetarian": true,
           "paleo": false,
@@ -734,12 +760,13 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["coffee"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegan", "vegetarian", "glutenFree"]
+          "tags":["all", "excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegan", "vegetarian", "glutenFree"]
         },
         {
           "name": "brussel sprouts",
-          "photoUrl": "http://i.imgur.com/vJD62hZ.jpg",
+          "photoUrl": "https://i.imgur.com/vJD62hZ.jpg",
           "vegan": true,
           "vegetarian": true,
           "paleo": true,
@@ -750,12 +777,13 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["brussel sprouts"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegan", "vegetarian", "paleo", "glutenFree"]
+          "tags":["all", "excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegan", "vegetarian", "paleo", "glutenFree"]
         },
         {
           "name": "meat nachos",
-          "photoUrl": "http://i.imgur.com/QDhTmN3.jpg",
+          "photoUrl": "https://i.imgur.com/QDhTmN3.jpg",
           "vegan": false,
           "vegetarian": false,
           "paleo": false,
@@ -766,12 +794,13 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["nachos"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesNuts", "excludesShellfish", "excludesEgg", "glutenFree", "containsDairy"]
+          "tags":["all", "excludesNuts", "excludesShellfish", "excludesEgg", "glutenFree", "containsDairy"]
         },
         {
           "name": "korean nachos",
-          "photoUrl": "http://i.imgur.com/O0CbWN8.jpg",
+          "photoUrl": "https://i.imgur.com/O0CbWN8.jpg",
           "vegan": false,
           "vegetarian": false,
           "paleo": false,
@@ -782,12 +811,13 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["nachos"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesNuts", "excludesShellfish", "excludesEgg", "glutenFree", "containsDairy"]
+          "tags":["all", "excludesNuts", "excludesShellfish", "excludesEgg", "glutenFree", "containsDairy"]
         },
         {
           "name": "cheese and crackers",
-          "photoUrl": "http://i.imgur.com/GprgQLL.jpg",
+          "photoUrl": "https://i.imgur.com/GprgQLL.jpg",
           "vegan": false,
           "vegetarian": true,
           "paleo": false,
@@ -798,12 +828,13 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["cheese", "crackers"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesNuts", "excludesShellfish", "excludesEgg", "vegetarian", "containsDairy"]
+          "tags":["all", "excludesNuts", "excludesShellfish", "excludesEgg", "vegetarian", "containsDairy"]
         },
         {
           "name": "quiche",
-          "photoUrl": "http://i.imgur.com/ywlUpgL.jpg",
+          "photoUrl": "https://i.imgur.com/ywlUpgL.jpg",
           "vegan": false,
           "vegetarian": true,
           "paleo": true,
@@ -814,12 +845,13 @@ let foods = {
           "containsEgg": true,
           "searchFor": ["eggs", "quiche"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesNuts", "excludesShellfish", "vegetarian", "paleo", "glutenFree", "containsDairy", "containsEgg"]
+          "tags":["all", "excludesNuts", "excludesShellfish", "vegetarian", "paleo", "glutenFree", "containsDairy", "containsEgg"]
         },
         {
           "name": "french fries",
-          "photoUrl": "http://i.imgur.com/t2pGGt6.jpg",
+          "photoUrl": "https://i.imgur.com/t2pGGt6.jpg",
           "vegan": true,
           "vegetarian": true,
           "paleo": false,
@@ -830,12 +862,13 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["french fries"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegan", "vegetarian", "glutenFree"]
+          "tags":["all", "excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegan", "vegetarian", "glutenFree"]
         },
         {
           "name": "chicken wings",
-          "photoUrl": "http://i.imgur.com/KwmXwQP.jpg",
+          "photoUrl": "https://i.imgur.com/KwmXwQP.jpg",
           "vegan": false,
           "vegetarian": false,
           "paleo": true,
@@ -846,12 +879,13 @@ let foods = {
           "containsEgg": true,
           "searchFor": ["fried","chicken"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesDairy", "excludesNuts", "excludesShellfish","paleo", "containsEgg"]
+          "tags":["all", "excludesDairy", "excludesNuts", "excludesShellfish","paleo", "containsEgg"]
         },
         {
           "name": "paella",
-          "photoUrl": "http://i.imgur.com/H7xEntc.jpg",
+          "photoUrl": "https://i.imgur.com/H7xEntc.jpg",
           "vegan": false,
           "vegetarian": false,
           "paleo": false,
@@ -862,12 +896,13 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["shrimp","rice", "sausage"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesNuts", "excludesEgg", "vegan", "vegetarian", "paleo", "glutenFree", "containsDairy", "containsShellfish"]
+          "tags":["all", "excludesNuts", "excludesEgg", "vegetarian", "paleo", "glutenFree", "containsDairy", "containsShellfish"]
         },
         {
           "name": "tomato soup",
-          "photoUrl": "http://i.imgur.com/zsLtssq.jpg",
+          "photoUrl": "https://i.imgur.com/zsLtssq.jpg",
           "vegan": false,
           "vegetarian": true,
           "paleo": true,
@@ -878,12 +913,13 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["tomato soup"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegetarian", "paleo", "glutenFree"]
+          "tags":["all", "excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegetarian", "glutenFree"]
         },
         {
           "name": "salad",
-          "photoUrl": "http://i.imgur.com/rrMdsSC.jpg",
+          "photoUrl": "https://i.imgur.com/rrMdsSC.jpg",
           "vegan": true,
           "vegetarian": true,
           "paleo": true,
@@ -894,12 +930,13 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["salad", "greens"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegan", "vegetarian", "paleo", "glutenFree"]
+          "tags":["all", "excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg",  "vegetarian", "glutenFree"]
         },
         {
           "name": "vegan tacos",
-          "photoUrl": "http://i.imgur.com/VpylDXe.jpg",
+          "photoUrl": "https://i.imgur.com/VpylDXe.jpg",
           "vegan": true,
           "vegetarian": true,
           "paleo": true,
@@ -910,28 +947,13 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["salad", "greens"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegan", "vegetarian", "paleo", "glutenFree"]
-        },
-        {
-          "name": "vegan pizza",
-          "photoUrl": "http://i.imgur.com/QT65aJb.jpg",
-          "vegan": true,
-          "vegetarian": true,
-          "paleo": true,
-          "glutenFree": false,
-          "containsDairy": false,
-          "containsNuts": false,
-          "containsShellfish": false,
-          "containsEgg": false,
-          "searchFor": ["pizza", "vegan"],
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-          "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegan", "vegetarian", "paleo"]
+          "tags":["all", "excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegan", "vegetarian", "paleo", "glutenFree"]
         },
         {
           "name": "vegan mac & cheese",
-          "photoUrl": "http://i.imgur.com/DB8BcLQ.jpg",
+          "photoUrl": "https://i.imgur.com/DB8BcLQ.jpg",
           "vegan": true,
           "vegetarian": true,
           "paleo": false,
@@ -942,12 +964,13 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["mac and cheese", "vegan"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegan", "vegetarian"]
+          "tags":["all", "excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegan", "vegetarian"]
         },
         {
           "name": "beet wellington",
-          "photoUrl": "http://i.imgur.com/SfEgbad.jpg",
+          "photoUrl": "https://i.imgur.com/SfEgbad.jpg",
           "vegan": true,
           "vegetarian": true,
           "paleo": false,
@@ -958,12 +981,13 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["mac and cheese", "vegan"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegan", "vegetarian"]
+          "tags":["all", "excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegetarian"]
         },
         {
           "name": "vegan biscuits and gravy",
-          "photoUrl": "http://i.imgur.com/vqKU1Fi.jpg",
+          "photoUrl": "https://i.imgur.com/vqKU1Fi.jpg",
           "vegan": true,
           "vegetarian": true,
           "paleo": false,
@@ -974,12 +998,13 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["biscuits and gravy", "vegan"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegan", "vegetarian"]
+          "tags":["all", "excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegan", "vegetarian"]
         },
         {
           "name": "vegan chicken and waffles",
-          "photoUrl": "http://i.imgur.com/2PMadQE.jpg",
+          "photoUrl": "https://i.imgur.com/2PMadQE.jpg",
           "vegan": true,
           "vegetarian": true,
           "paleo": false,
@@ -990,12 +1015,13 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["chicken and waffles", "vegan"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegan", "vegetarian"]
+          "tags":["all", "excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegan", "vegetarian"]
         },
         {
           "name": "black bean burger",
-          "photoUrl": "http://i.imgur.com/XT0L7K8.jpg",
+          "photoUrl": "https://i.imgur.com/XT0L7K8.jpg",
           "vegan": true,
           "vegetarian": true,
           "paleo": false,
@@ -1006,12 +1032,13 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["black bean burger", "vegan"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegan", "vegetarian"]
+          "tags":["all", "excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegetarian"]
         },
         {
           "name": "vegan sushi",
-          "photoUrl": "http://i.imgur.com/wt4tryH.jpg",
+          "photoUrl": "https://i.imgur.com/wt4tryH.jpg",
           "vegan": true,
           "vegetarian": true,
           "paleo": false,
@@ -1022,12 +1049,13 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["sushi", "vegan"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegan", "vegetarian", "glutenFree"]
+          "tags":["all", "excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegetarian", "glutenFree"]
         },
         {
           "name": "portobello",
-          "photoUrl": "http://i.imgur.com/hNz6fDp.jpg",
+          "photoUrl": "https://i.imgur.com/hNz6fDp.jpg",
           "vegan": true,
           "vegetarian": true,
           "paleo": true,
@@ -1038,12 +1066,13 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["mushroom", "vegan"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegan", "vegetarian", "paleo"]
+          "tags":["all", "excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegetarian"]
         },
         {
           "name": "french onion soup",
-          "photoUrl": "http://i.imgur.com/RKS3y0w.jpg",
+          "photoUrl": "https://i.imgur.com/RKS3y0w.jpg",
           "vegan": false,
           "vegetarian": true,
           "paleo": false,
@@ -1054,12 +1083,13 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["onion", "soup"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesNuts", "excludesShellfish", "excludesEgg", "vegetarian", "containsDairy"]
+          "tags":["all", "excludesNuts", "excludesShellfish", "excludesEgg", "vegetarian", "containsDairy"]
         },
         {
           "name": "bloody mary",
-          "photoUrl": "http://i.imgur.com/SDWhkwb.jpg",
+          "photoUrl": "https://i.imgur.com/SDWhkwb.jpg",
           "vegan": true,
           "vegetarian": true,
           "paleo": true,
@@ -1070,12 +1100,13 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["vodka", "bloody mary"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegan", "vegetarian", "paleo", "glutenFree"]
+          "tags":["all", "excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegetarian",  "glutenFree"]
         },
         {
-          "name": "Coconut Drink",
-          "photoUrl": "http://i.imgur.com/Ufzti9W.jpg",
+          "name": "coconut drink",
+          "photoUrl": "https://i.imgur.com/Ufzti9W.jpg",
           "vegan": true,
           "vegetarian": true,
           "paleo": true,
@@ -1086,12 +1117,13 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["cocunut drink"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegan", "vegetarian", "paleo", "glutenFree"]
+          "tags":["all", "excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegan", "vegetarian", "paleo", "glutenFree"]
         },
         {
           "name": "wine",
-          "photoUrl": "http://i.imgur.com/wtmrRwV.jpg",
+          "photoUrl": "https://i.imgur.com/wtmrRwV.jpg",
           "vegan": true,
           "vegetarian": true,
           "paleo": true,
@@ -1102,12 +1134,13 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["wine", "alcohol"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegan", "vegetarian", "paleo", "glutenFree"]
+          "tags":["all", "excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg",  "vegetarian", "glutenFree"]
         },
         {
           "name": "champagne",
-          "photoUrl": "http://i.imgur.com/ItDUD3U.jpg",
+          "photoUrl": "https://i.imgur.com/ItDUD3U.jpg",
           "vegan": true,
           "vegetarian": true,
           "paleo": true,
@@ -1118,12 +1151,13 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["champagne", "alcohol"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegan", "vegetarian", "paleo", "glutenFree"]
+          "tags":["all", "excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegetarian", "glutenFree"]
         },
         {
           "name": "beer",
-          "photoUrl": "http://i.imgur.com/RKleYzR.jpg",
+          "photoUrl": "https://i.imgur.com/RKleYzR.jpg",
           "vegan": true,
           "vegetarian": true,
           "paleo": false,
@@ -1134,12 +1168,13 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["wine", "alcohol"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegan", "vegetarian"]
+          "tags":["all", "excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegan", "vegetarian"]
         },
         {
           "name": "martini",
-          "photoUrl": "http://i.imgur.com/NXIvhQp.jpg",
+          "photoUrl": "https://i.imgur.com/NXIvhQp.jpg",
           "vegan": true,
           "vegetarian": true,
           "paleo": true,
@@ -1150,12 +1185,13 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["martini", "alcohol"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegan", "vegetarian", "paleo", "glutenFree"]
+          "tags":["all", "excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegetarian", "paleo", "glutenFree"]
         },
         {
           "name": "mojito",
-          "photoUrl": "http://i.imgur.com/ji9azlq.jpg",
+          "photoUrl": "https://i.imgur.com/ji9azlq.jpg",
           "vegan": true,
           "vegetarian": true,
           "paleo": true,
@@ -1166,12 +1202,13 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["mojito", "alcohol"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegan", "vegetarian", "paleo", "glutenFree"]
+          "tags":["all", "excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegan", "vegetarian", "paleo", "glutenFree"]
         },
         {
           "name": "whiskey",
-          "photoUrl": "http://i.imgur.com/he1tfjV.jpg",
+          "photoUrl": "https://i.imgur.com/he1tfjV.jpg",
           "vegan": true,
           "vegetarian": true,
           "paleo": true,
@@ -1182,12 +1219,13 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["whiskey", "alcohol"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegan", "vegetarian", "paleo", "glutenFree"]
+          "tags":["all", "excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegetarian",  "glutenFree"]
         },
         {
           "name": "iced tea",
-          "photoUrl": "http://i.imgur.com/9gdY0ZV.jpg",
+          "photoUrl": "https://i.imgur.com/9gdY0ZV.jpg",
           "vegan": true,
           "vegetarian": true,
           "paleo": true,
@@ -1198,12 +1236,13 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["iced tea"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegan", "vegetarian", "paleo", "glutenFree"]
+          "tags":["all", "excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg",  "vegetarian", "glutenFree"]
         },
         {
           "name": "iced coffee",
-          "photoUrl": "http://i.imgur.com/X1KnQEr.jpg",
+          "photoUrl": "https://i.imgur.com/X1KnQEr.jpg",
           "vegan": true,
           "vegetarian": true,
           "paleo": true,
@@ -1214,12 +1253,13 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["iced coffee"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegan", "vegetarian", "paleo", "glutenFree"]
+          "tags":["all", "excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegetarian", "glutenFree"]
         },
         {
           "name": "espresso",
-          "photoUrl": "http://i.imgur.com/YDouShW.jpg",
+          "photoUrl": "https://i.imgur.com/YDouShW.jpg",
           "vegan": true,
           "vegetarian": true,
           "paleo": true,
@@ -1230,12 +1270,13 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["coffee"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegan", "vegetarian", "paleo", "glutenFree"]
+          "tags":["all", "excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegetarian",  "glutenFree"]
         },
         {
           "name": "smoothie",
-          "photoUrl": "http://i.imgur.com/98WbHZp.jpg",
+          "photoUrl": "https://i.imgur.com/98WbHZp.jpg",
           "vegan": true,
           "vegetarian": true,
           "paleo": true,
@@ -1246,10 +1287,8 @@ let foods = {
           "containsEgg": false,
           "searchFor": ["smoothie"],
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "testPhotoUrl" : "https://s-media-cache-ak0.pinimg.com/originals/5b/5c/c2/5b5cc265cf4135803a46b3a210120f5b.jpg",
           "restaurants": ["Mcdonalds", "Watercourse", "Starbucks", "Papa Johns", "City O City"],
-          "tags":["excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegan", "vegetarian", "paleo", "glutenFree"]
-        },
-      ]
-}
-Contact GitHub API Training Shop Blog About
-© 2016 GitHub, Inc. Terms Privacy Security Status Help
+          "tags":["all", "excludesDairy", "excludesNuts", "excludesShellfish", "excludesEgg", "vegetarian", "glutenFree"]
+        }
+]
